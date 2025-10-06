@@ -14,6 +14,18 @@ void swap(int *xp, int *yp) {
     *xp = *yp;
     *yp = temp;
 }
+void bubble sort{
+for (int i = 0; i < n; i++) {
+for (int j = 0; j < n - 1; j++) {
+if (a[j] > a[j + 1]) {
+// Swap elements if they are in the wrong order
+int temp = a[j];
+a[j] = a[j + 1];
+a[j + 1] = temp;
+}
+}
+}
+}
 
 void selectionSort(int arr[], int n) {
     int i, j, min_idx;
@@ -157,4 +169,5 @@ int main() {
     (i_index == -1) ? cout << "Element not found" << endl : cout << "Element found at index " << i_index << endl;
 
     return 0;
+
 }
